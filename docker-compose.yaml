@@ -1,0 +1,44 @@
+﻿services:
+  helpdesk-db:
+    image: postgres:18.0
+    container_name: user-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12341234
+      POSTGRES_DB: Users
+    ports:
+      - "5433:5432"
+    volumes:
+      - users-postgres-data:/var/lib/postgresql/MAJOR/docker
+    networks:
+      - helpdesk-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres  -d Users" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  
+  user.presentation:
+    image: user.presentation
+    build:
+      context: .
+      dockerfile: User.Presentation/Dockerfile
+    container_name: user-presentation
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=Users;Username=postgres;Password=12341234
+    ports:
+      - "5001:80"
+    depends_on:
+      helpdesk-db:
+        condition: service_healthy
+    networks:
+      - helpdesk-network
+
+volumes:
+  users-postgres-data:
+    
+networks:
+  helpdesk-network:
+    driver: bridge
