@@ -5,6 +5,9 @@ using User.Domain.Abstractions.Services;
 
 namespace User.Presentation.Controllers;
 
+/// <summary>
+///     Контроллер User
+/// </summary>
 [ApiController]
 [Route("api/users")]
 public class UserController : ControllerBase
@@ -31,7 +34,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(PostUserRequest request)
+    public async Task<IActionResult> Create([FromBody] PostUserRequest request)
     {
         try
         {
@@ -45,7 +48,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPatch]
-    public async Task<IActionResult> Update(PatchUserRequest request)
+    public async Task<IActionResult> Update([FromBody] PatchUserRequest request)
     {
         try
         {

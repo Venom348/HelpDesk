@@ -1,19 +1,19 @@
 ﻿services:
-  helpdesk-db:
+  postgres-db:
     image: postgres:18.0
-    container_name: user-postgres
+    container_name: helpdesk-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 12341234
-      POSTGRES_DB: Users
+      POSTGRES_DB: HelpDesk
     ports:
       - "5433:5432"
     volumes:
-      - users-postgres-data:/var/lib/postgresql/MAJOR/docker
+      - helpdesk-postgres-data:/var/lib/postgresql/MAJOR/docker
     networks:
       - helpdesk-network
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U postgres  -d Users" ]
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -27,18 +27,37 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=Users;Username=postgres;Password=12341234
+      - ConnectionStrings__Psql=Host=postgres-db;Port=5432;Database=Users;Username=postgres;Password=12341234
     ports:
       - "5001:80"
     depends_on:
-      helpdesk-db:
+      postgres-db:
         condition: service_healthy
     networks:
       - helpdesk-network
-
+        
+  problematicapplication.presentation:
+    image: problematicapplication.presentation
+    build:
+      context: .
+      dockerfile: ProblematicApplication.Presentation/Dockerfile
+    container_name: problematicapplication-presentation
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__Psql=Host=postgres-db;Port=5432;Database=ProblematicApplication;Username=postgres;Password=12341234
+    ports:
+      - "5002:80"
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    networks:
+      - helpdesk-network
+    
 volumes:
-  users-postgres-data:
+  helpdesk-postgres-data:
     
 networks:
   helpdesk-network:
     driver: bridge
+

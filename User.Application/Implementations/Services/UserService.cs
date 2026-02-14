@@ -100,7 +100,7 @@ public class UserService : IUserService
         result.Email = request.Email;
         
         // Изменяет данные пользователя
-        _userRepository.Update(result);
+        await _userRepository.Update(result);
         
         // Возвращает изменённые данные пользователя
         return _mapper.Map<UserDescriptionResponse>(result);
@@ -117,7 +117,7 @@ public class UserService : IUserService
         }
         
         // Удаление пользователя
-        _userRepository.Delete(result);
+        await _userRepository.Delete(result);
         
         // Возвращает ID удалённого пользователя
         return _mapper.Map<UserResponse>(result);
