@@ -52,6 +52,25 @@
         condition: service_healthy
     networks:
       - helpdesk-network
+  
+  category.presentation:
+    image: category.presentation
+    build:
+      context: .
+      dockerfile: Category.Presentation/Dockerfile
+    container_name: category-presentation
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=Category;Username=postgres;Password=12341234
+    ports:
+      - "5003:80"
+    depends_on:
+      helpdesk-db:
+        condition: service_healthy
+    networks:
+      - helpdesk-network
+    
     
 volumes:
   helpdesk-postgres-data:
@@ -59,4 +78,3 @@ volumes:
 networks:
   helpdesk-network:
     driver: bridge
-
