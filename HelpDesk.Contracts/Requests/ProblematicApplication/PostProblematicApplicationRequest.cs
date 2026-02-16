@@ -51,9 +51,4 @@ public class PostProblematicApplicationRequest
     ///     Приоритет
     /// </summary>
     public Priority Priority { get; set; }
-    
-    /// <summary>
-    ///     Список наблюдателей
-    /// </summary>
-    public ICollection<int> Watchers { get; set; } = new List<int>();
 }

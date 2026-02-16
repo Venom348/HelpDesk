@@ -1,0 +1,17 @@
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\ProblematicApplication.Application.deps.json
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\ProblematicApplication.Application.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\ProblematicApplication.Application.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\ProblematicApplication.Domain.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\ProblematicApplication.Domain.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.csproj.AssemblyReference.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\Problema.9E5B42FE.Up2Date
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\refint\ProblematicApplication.Application.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ProblematicApplication.Application.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Application\obj\Debug\net10.0\ref\ProblematicApplication.Application.dll

@@ -1,0 +1,15 @@
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\bin\Debug\net10.0\ProblematicApplication.Domain.deps.json
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\bin\Debug\net10.0\ProblematicApplication.Domain.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\bin\Debug\net10.0\ProblematicApplication.Domain.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.csproj.AssemblyReference.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\Problema.867ACCF7.Up2Date
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\refint\ProblematicApplication.Domain.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ProblematicApplication.Domain.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Domain\obj\Debug\net10.0\ref\ProblematicApplication.Domain.dll

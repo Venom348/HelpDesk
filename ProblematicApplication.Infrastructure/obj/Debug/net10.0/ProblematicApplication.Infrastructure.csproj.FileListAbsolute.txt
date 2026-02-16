@@ -1,0 +1,17 @@
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\ProblematicApplication.Infrastructure.deps.json
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\ProblematicApplication.Infrastructure.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\ProblematicApplication.Infrastructure.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\ProblematicApplication.Domain.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\ProblematicApplication.Domain.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.csproj.AssemblyReference.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\Problema.6034191E.Up2Date
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\refint\ProblematicApplication.Infrastructure.dll
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ProblematicApplication.Infrastructure.pdb
+D:\Rider Project\HelpDesk\ProblematicApplication.Infrastructure\obj\Debug\net10.0\ref\ProblematicApplication.Infrastructure.dll

@@ -79,8 +79,7 @@ public class ProblematicApplicationService : IProblematicApplicationService
             Deadline =  request.Deadline,
             CreatedAt = DateTime.UtcNow,
             Status = request.Status,
-            Priority = request.Priority,
-            Watchers = request.Watchers
+            Priority = request.Priority
         });
         
         // Возвращает информацию о созданной заявке

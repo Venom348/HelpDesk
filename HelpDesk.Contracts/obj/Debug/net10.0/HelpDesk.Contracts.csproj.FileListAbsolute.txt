@@ -1,0 +1,11 @@
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\bin\Debug\net10.0\HelpDesk.Contracts.deps.json
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\refint\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\HelpDesk.Contracts\obj\Debug\net10.0\ref\HelpDesk.Contracts.dll

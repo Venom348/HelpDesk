@@ -1,11 +1,10 @@
 ﻿services:
-  postgres-db:
+  helpdesk-db:
     image: postgres:18.0
     container_name: helpdesk-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 12341234
-      POSTGRES_DB: HelpDesk
     ports:
       - "5433:5432"
     volumes:
@@ -27,11 +26,11 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - ConnectionStrings__Psql=Host=postgres-db;Port=5432;Database=Users;Username=postgres;Password=12341234
+      - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=Users;Username=postgres;Password=12341234
     ports:
       - "5001:80"
     depends_on:
-      postgres-db:
+      helpdesk-db:
         condition: service_healthy
     networks:
       - helpdesk-network
@@ -45,11 +44,11 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
-      - ConnectionStrings__Psql=Host=postgres-db;Port=5432;Database=ProblematicApplication;Username=postgres;Password=12341234
+      - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=ProblematicApplication;Username=postgres;Password=12341234
     ports:
       - "5002:80"
     depends_on:
-      postgres-db:
+      helpdesk-db:
         condition: service_healthy
     networks:
       - helpdesk-network

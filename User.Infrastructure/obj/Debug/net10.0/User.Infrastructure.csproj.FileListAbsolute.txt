@@ -1,0 +1,17 @@
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\User.Infrastructure.deps.json
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\User.Infrastructure.dll
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\User.Infrastructure.pdb
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\User.Domain.dll
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\User.Domain.pdb
+D:\Rider Project\HelpDesk\User.Infrastructure\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.csproj.AssemblyReference.cache
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Inf.02930D50.Up2Date
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.dll
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\refint\User.Infrastructure.dll
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\User.Infrastructure.pdb
+D:\Rider Project\HelpDesk\User.Infrastructure\obj\Debug\net10.0\ref\User.Infrastructure.dll

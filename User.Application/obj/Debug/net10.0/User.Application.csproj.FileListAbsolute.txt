@@ -1,0 +1,17 @@
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\User.Application.deps.json
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\User.Application.dll
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\User.Application.pdb
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\HelpDesk.Contracts.dll
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\User.Domain.dll
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\User.Domain.pdb
+D:\Rider Project\HelpDesk\User.Application\bin\Debug\net10.0\HelpDesk.Contracts.pdb
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.csproj.AssemblyReference.cache
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.AssemblyInfoInputs.cache
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.AssemblyInfo.cs
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.csproj.CoreCompileInputs.cache
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.App.1A218819.Up2Date
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.dll
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\refint\User.Application.dll
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\User.Application.pdb
+D:\Rider Project\HelpDesk\User.Application\obj\Debug\net10.0\ref\User.Application.dll
