@@ -17,6 +17,20 @@
       timeout: 5s
       retries: 5
   
+  helpdesk-rabbitmq:
+    image: rabbitmq:4-management
+    container_name: helpdesk-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - helpdesk-network
+    healthcheck:
+      test: [ "CMD", "rabbitmq-diagnostics", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  
   user.presentation:
     image: user.presentation
     build:
@@ -50,6 +64,8 @@
     depends_on:
       helpdesk-db:
         condition: service_healthy
+      helpdesk-rabbitmq:
+        condition: service_healthy
     networks:
       - helpdesk-network
   
@@ -63,14 +79,16 @@
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:80
       - ConnectionStrings__Psql=Host=helpdesk-db;Port=5432;Database=Category;Username=postgres;Password=12341234
+      - RabbitMQ__HostName=helpdesk-rabbitmq
     ports:
       - "5003:80"
     depends_on:
       helpdesk-db:
         condition: service_healthy
+      helpdesk-rabbitmq:
+        condition: service_healthy
     networks:
       - helpdesk-network
-    
     
 volumes:
   helpdesk-postgres-data:

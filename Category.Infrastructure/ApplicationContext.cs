@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Category.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Category.Infrastructure;
 
@@ -9,6 +10,7 @@ public class ApplicationContext : DbContext
 {
     // Определение сущности
     public DbSet<Domain.Entities.Category>  Categories => Set<Domain.Entities.Category>();
+    public DbSet<ApplicationEvent> ApplicationEvents => Set<ApplicationEvent>();
 
     public ApplicationContext(DbContextOptions options) : base(options)
     {

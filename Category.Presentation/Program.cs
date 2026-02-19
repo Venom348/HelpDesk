@@ -1,8 +1,10 @@
+using Category.Application.Abstractions;
 using Category.Application.Implementations.Services;
 using Category.Domain.Abstractions.Repositories;
 using Category.Domain.Abstractions.Services;
 using Category.Domain.Mapping;
 using Category.Infrastructure;
+using Category.Infrastructure.Messaging.Consumers;
 using Category.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +17,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddDbContext<ApplicationContext>(opt => opt.UseNpgsql(configuration.GetConnectionString("Psql")));
 builder.Services.AddTransient<IBaseRepository<Category.Domain.Entities.Category>, CategoryRepository>();
+builder.Services.AddScoped<IApplicationEventRepository, ApplicationEventRepository>();
 builder.Services.AddAutoMapper(opt => opt.AddProfile<CategoryProfile>());
+
+// Регистрация RabbitMQ Consumer-ов как фоновых сервисов
+builder.Services.AddHostedService<ApplicationCreatedConsumer>();
+builder.Services.AddHostedService<ApplicationStatusChangedConsumer>();
 
 var app = builder.Build();
 
