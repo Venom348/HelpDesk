@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using ProblematicApplication.Application.Exceptions;
 using ProblematicApplication.Domain.Abstractions.Repositories;
 using ProblematicApplication.Domain.Abstractions.Services;
+using ProblematicApplication.Infrastructure.Messaging.Producers;
 
 namespace ProblematicApplication.Application.Implementations.Services;
 
@@ -15,11 +16,13 @@ public class ProblematicApplicationService : IProblematicApplicationService
 {
     private readonly IBaseRepository<Domain.Entities.ProblematicApplication> _problematicApplicationRepository;
     private readonly IMapper _mapper;
+    private readonly EventPublisher _eventPublisher;
 
-    public ProblematicApplicationService(IBaseRepository<Domain.Entities.ProblematicApplication> problematicApplicationRepository, IMapper mapper)
+    public ProblematicApplicationService(IBaseRepository<Domain.Entities.ProblematicApplication> problematicApplicationRepository, IMapper mapper, EventPublisher eventPublisher)
     {
         _problematicApplicationRepository = problematicApplicationRepository;
         _mapper = mapper;
+        _eventPublisher = eventPublisher;
     }
 
     public async Task<List<ProblematicApplicationDescriptionResponse>> GetAll(int applicantId, int categoryId, int page = 0, int limit = 20)
@@ -81,6 +84,12 @@ public class ProblematicApplicationService : IProblematicApplicationService
             Status = request.Status,
             Priority = request.Priority
         });
+        
+        // Публикация события о создании заявки в RabbitMQ
+        await _eventPublisher.PublishApplicationCreatedAsync(
+            applicationId: result.Id,
+            categoryId: result.CategoryId,
+            cancellationToken: CancellationToken.None);
         
         // Возвращает информацию о созданной заявке
         return _mapper.Map<ProblematicApplicationDescriptionResponse>(result);
@@ -156,6 +165,15 @@ public class ProblematicApplicationService : IProblematicApplicationService
         // Обновление заявки
         await _problematicApplicationRepository.Update(result);
         await _problematicApplicationRepository.SaveChangesAsync();
+        
+        // Публикация события об изменении статуса в RabbitMQ
+        bool isActive = request.Status != Status.Closed && request.Status != Status.Canceled;
+        
+        await _eventPublisher.PublishApplicationStatusChangedAsync(
+            applicationId: result.Id,
+            categoryId: result.CategoryId,
+            isActive: isActive,
+            cancellationToken: CancellationToken.None);
         
         // Возвращает изменённые данные заявки
         return _mapper.Map<ProblematicApplicationDescriptionResponse>(result);

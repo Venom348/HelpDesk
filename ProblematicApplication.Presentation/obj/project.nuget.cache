@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+6y7VbW+Ccg=",
+  "dgSpecHash": "7oIVeIW35NA=",
   "success": true,
   "projectFilePath": "D:\\Rider Project\\HelpDesk\\ProblematicApplication.Presentation\\ProblematicApplication.Presentation.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.0\\microsoft.entityframeworkcore.relational.10.0.0.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.3\\microsoft.extensions.caching.abstractions.10.0.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.3\\microsoft.extensions.caching.memory.10.0.3.nupkg.sha512",
-    "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.3\\microsoft.extensions.configuration.abstractions.10.0.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.3\\microsoft.extensions.dependencyinjection.10.0.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.extensions.logging\\10.0.3\\microsoft.extensions.logging.10.0.3.nupkg.sha512",
@@ -26,10 +26,13 @@
     "C:\\Users\\v2e7n\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\npgsql\\10.0.1\\npgsql.10.0.1.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\10.0.0\\npgsql.entityframeworkcore.postgresql.10.0.0.nupkg.sha512",
+    "C:\\Users\\v2e7n\\.nuget\\packages\\rabbitmq.client\\7.2.0\\rabbitmq.client.7.2.0.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.3\\swashbuckle.aspnetcore.swagger.10.1.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.3\\swashbuckle.aspnetcore.swaggergen.10.1.3.nupkg.sha512",
     "C:\\Users\\v2e7n\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.3\\swashbuckle.aspnetcore.swaggerui.10.1.3.nupkg.sha512",
-    "C:\\Users\\v2e7n\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+    "C:\\Users\\v2e7n\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\v2e7n\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
+    "C:\\Users\\v2e7n\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
