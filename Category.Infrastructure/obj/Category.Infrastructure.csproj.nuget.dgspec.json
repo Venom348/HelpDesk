@@ -4,6 +4,75 @@
     "D:\\Rider Project\\HelpDesk\\Category.Infrastructure\\Category.Infrastructure.csproj": {}
   },
   "projects": {
+    "D:\\Rider Project\\HelpDesk\\Category.Application\\Category.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Rider Project\\HelpDesk\\Category.Application\\Category.Application.csproj",
+        "projectName": "Category.Application",
+        "projectPath": "D:\\Rider Project\\HelpDesk\\Category.Application\\Category.Application.csproj",
+        "packagesPath": "C:\\Users\\v2e7n\\.nuget\\packages\\",
+        "outputPath": "D:\\Rider Project\\HelpDesk\\Category.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\v2e7n\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "D:\\Rider Project\\HelpDesk\\Category.Domain\\Category.Domain.csproj": {
+                "projectPath": "D:\\Rider Project\\HelpDesk\\Category.Domain\\Category.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Rider Project\\HelpDesk\\Category.Domain\\Category.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,6 +164,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "D:\\Rider Project\\HelpDesk\\Category.Application\\Category.Application.csproj": {
+                "projectPath": "D:\\Rider Project\\HelpDesk\\Category.Application\\Category.Application.csproj"
+              },
               "D:\\Rider Project\\HelpDesk\\Category.Domain\\Category.Domain.csproj": {
                 "projectPath": "D:\\Rider Project\\HelpDesk\\Category.Domain\\Category.Domain.csproj"
               }
@@ -121,9 +193,17 @@
               "target": "Package",
               "version": "[10.0.3, )"
             },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [

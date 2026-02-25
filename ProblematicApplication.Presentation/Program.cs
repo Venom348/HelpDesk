@@ -5,6 +5,7 @@ using ProblematicApplication.Domain.Abstractions.Repositories;
 using ProblematicApplication.Domain.Abstractions.Services;
 using ProblematicApplication.Domain.Mapping;
 using ProblematicApplication.Infrastructure;
+using ProblematicApplication.Infrastructure.Messaging.Producers;
 using ProblematicApplication.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,7 @@ builder.Services.AddDbContext<ApplicationContext>(opt => opt.UseNpgsql(configura
 builder.Services
     .AddTransient<IBaseRepository<ProblematicApplication.Domain.Entities.ProblematicApplication>,
         ProblematicApplicationRepository>();
+builder.Services.AddSingleton<EventPublisher>();
 builder.Services.AddAutoMapper(opt => opt.AddProfile<ProblematicApplicationProfile>());
 
 var app = builder.Build();

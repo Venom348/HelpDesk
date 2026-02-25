@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Category.Application.Abstractions;
 using Category.Application.Exceptions;
 using Category.Domain.Abstractions.Repositories;
 using Category.Domain.Abstractions.Services;
@@ -12,12 +13,14 @@ namespace Category.Application.Implementations.Services;
 public class CategoryService : ICategoryService
 {
     private readonly IBaseRepository<Domain.Entities.Category> _categoryService;
+    private readonly IApplicationEventRepository _applicationEventRepository;
     private readonly IMapper _mapper;
 
-    public CategoryService(IBaseRepository<Domain.Entities.Category> categoryService, IMapper mapper)
+    public CategoryService(IBaseRepository<Domain.Entities.Category> categoryService, IMapper mapper, IApplicationEventRepository applicationEventRepository)
     {
         _categoryService = categoryService;
         _mapper = mapper;
+        _applicationEventRepository = applicationEventRepository;
     }
 
     public async Task<List<CategoryResponse>> Get(int? id, int page = 0, int limit = 20)
@@ -105,6 +108,14 @@ public class CategoryService : ICategoryService
             throw new CategoryException("Категория с таким ID не найдена. Повторите попытку");
         }
         
+        // Проверка наличия активных заявок
+        var hasActiveApplications = await _applicationEventRepository.HasActiveApplicationAsync(id, CancellationToken.None);
+
+        if (hasActiveApplications)
+        {
+            throw new CategoryException("Невозможно удалить данную категорию, к ней привязаны активные заявки.");
+        }
+
         // Удаление категории
         await _categoryService.Delete(result);
         
